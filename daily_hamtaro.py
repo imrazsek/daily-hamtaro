@@ -1,8 +1,6 @@
-import os
-
 from apis import reddit, instagram
+from utils.dir_manager import create_directory, delete_directory
 from utils.image_viewer import open_image_viewer
-from utils.dir_manager import create_directory,delete_directory
 
 # Check folder images
 dir_path = create_directory("images")
