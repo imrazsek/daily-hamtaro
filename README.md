@@ -7,7 +7,6 @@ A Python application that automates downloading images from Reddit and posting t
 - Automatic image downloading from multiple subreddits
 - Interface for discarding images
 - Automated Instagram posting
-- Flexible configuration through text file
 
 ## 📋 Prerequisites
 
