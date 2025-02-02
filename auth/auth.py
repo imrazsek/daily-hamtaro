@@ -2,9 +2,13 @@ import stdiomask
 import os
 import pickle
 
+
 def user_input_data():
-    return {'client_id': input('client_id: '), 'client_secret': stdiomask.getpass('client_secret: '),
-               'user_agent': input('user_agent: '), 'username': input('Username: '), 'password': stdiomask.getpass()}
+    return {'client_id': input('Reddit client_id: '),
+            'Reddit client_secret': stdiomask.getpass('Reddit client_secret: '),
+            'user_agent': 'daily-hamtaro by u/imrazsek-developer', 'username': input('Reddit Username: '),
+            'password': stdiomask.getpass()}
+
 
 def get_credentials():
     # Check previously auth.
