@@ -1,3 +1,4 @@
+import stdiomask
 from instagrapi import Client
 import json
 import os
@@ -30,7 +31,9 @@ class InstagramUploader:
         try:
             if os.path.exists(self.session_file):
                 with open(self.session_file, 'r') as f:
-                    return self.client.load_settings(json.load(f))
+                    session_data = json.load(f)
+                    if isinstance(session_data, dict):
+                        return self.client.load_settings(json.dumps(session_data))
             return False
         except Exception as e:
             print(f"Error loading session: {e}")
@@ -119,8 +122,8 @@ class InstagramUploader:
 
 def upload_images(dir_path):
     # Configuration
-    username = "daily.hamtaro"
-    password = "VSfP,Mn:G,4Ji3R"
+    username = input("Instagram user: ")
+    password = stdiomask.getpass()
 
     # Create uploader instance
     uploader = InstagramUploader(username, password)

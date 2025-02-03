@@ -2,6 +2,7 @@
 
 A Python application that automates downloading images from Reddit and posting them to Instagram.
 
+
 ## 🌟 Features
 
 - Automatic image downloading from multiple subreddits
@@ -33,9 +34,8 @@ pip install -r requirements.txt
 
 Modify `subreddits.txt` file with the list of subreddits you want to fetch images from:
 ```
-hamsters
-hamtaro
-cutepets
+animememes
+Animemes
 ```
 
 ## 💻 Usage
@@ -61,5 +61,3 @@ python daily_hamtaro.py
 ## 📬 Contact
 
 Cesar Montero - [@imrazsek](https://twitter.com/imrazsek)
-
-Project Link: [https://github.com/imrazsek/daily-hamtaro](https://github.com/imrazsek/daily-hamtaro)
